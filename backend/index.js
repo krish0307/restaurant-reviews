@@ -16,7 +16,7 @@ MongoClient.connect(process.env.RESTREVIEWS_DB_URI, {
   useUnifiedTopology: true,
 })
   .catch((err) => {
-    console.err(err.stack);
+    console.log(err.stack);
     process.exit(1);
   })
   .then(async (client) => {
